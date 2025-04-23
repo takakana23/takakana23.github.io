@@ -1,0 +1,59 @@
+/* Sección de comidas favoritas */
+.comidas-favoritas {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.comidas-favoritas h2 {
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #3b82f6;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.comidas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.comida-card {
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.comida-card:hover {
+  transform: translateY(-5px);
+}
+
+.comida-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.comida-card h3 {
+  font-size: 1.3rem;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.comida-card p {
+  font-size: 1rem;
+  color: #4b5563;
+}

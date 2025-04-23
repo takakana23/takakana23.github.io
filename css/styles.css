@@ -1,0 +1,668 @@
+/* Reseteo de márgenes y paddings */
+h1 {
+  font-family: monospace;
+}
+.h2 {
+  font-family: comic sans MS;
+  font-weight: 40;
+  font-style: normal;
+  
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+}
+/*empieza*/
+.bienvenida {
+  height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/img/guia3.jpg') center/cover no-repeat;
+  display: flex;
+  background-position: top;
+  justify-content: center;
+  background-position: 0 -80px;
+  align-items:end;
+  text-align: center;
+  color: white;
+  padding: 40px 20px;
+  position: relative;
+  border-radius: 50px;
+}
+
+.contenido-bienvenida img {
+  width: 100px;
+  border-radius: 30%;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+
+}
+.contenido-bienvenida h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+.contenido-bienvenida p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll suave para toda la página */
+html {
+  scroll-behavior: smooth;
+}
+/*termina*/
+.container {
+    width: 80%;
+    max-width: 5200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-mi {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sobre-mi h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #3b82f6;
+  display: inline-block;
+}
+
+.sobre-mi-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.tarjeta-perfil {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta-perfil img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.tarjeta-perfil h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.tarjeta-perfil .rol {
+  color: #6b7280;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.intereses ul {
+  list-style: none;
+  padding: 0;
+}
+
+.intereses li {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.intereses i {
+  color: #3b82f6;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+
+.texto-sobre-mi {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.texto-sobre-mi p {
+  margin-bottom: 20px;
+}
+
+
+.pasatiempos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #3b82f6;
+  display: inline-block;
+}
+
+.pasatiempos {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+/* Capa de superposición para oscurecer la imagen */
+header::before {
+    content: ""; /* Hace que aparezca un pseudo-elemento */
+    position: absolute; /* Lo coloca encima de la imagen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Color negro con opacidad (ajustable) */
+    z-index: 1; /* Asegura que el overlay esté encima de la imagen, pero detrás del texto */
+}
+p.new {font-family: monospace;}
+h1.fant {font-family: monospace;}
+/* Aseguramos que el texto quede encima del overlay */
+header h1, header p {
+    position: relative; /* Asegura que el texto esté por encima del overlay */
+    z-index: 2; /* Coloca el texto encima del overlay */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: white; /* Color blanco para asegurar visibilidad */
+    margin-top: 100px ;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 70px;
+}
+
+section {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+/*imaguenes guia , zuridadai y grupal */
+.imagenes-linea {
+    display: flex; /* Coloca las imágenes en una sola línea */
+    gap: 50px; /* Espacio de 20px entre las imágenes */
+    margin-bottom: 20px; /* Espacio debajo de las imágenes */
+    justify-content: center; /* Centra las imágenes en la línea */
+    margin-top: 40px;
+    
+}
+
+.imagen-item {
+    text-align: center; /* Centra el texto debajo de cada imagen */
+}
+
+.imagen-item img {
+    width: 250px; /* Tamaño de las imágenes normales */
+    height: 250px; /* Mantiene la altura constante */
+    object-fit: cover; /* Hace que la imagen se recorte de manera proporcional */
+    border-radius: 10px; /* Opcional: para bordes redondeados */
+    
+}
+
+.imagen-item img:hover{
+  border-radius:20%;
+  -webkit-border-radius:20%;
+  box-shadow: 0px 0px 15px 15px #049adaaa;
+  -webkit-box-shadow: 0px 0px 12px 12px #2d94ee53;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+.imagen-ancha img {
+    width: 350px; /* Segunda imagen más ancha */
+    height: 250px; /* Mantiene la altura constante */
+}
+
+.imagen-item p {
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+}
+/* Estilo para la última imagen, para hacerla un poco más grande visualmente */
+.imagen-escala img {
+    width: 250px; /* Mantén el tamaño original */
+    height: auto;    object-fit: cover;
+    transform: scale(1.1); /* Aumenta la imagen al 110% de su tamaño original */
+    transition: transform 0.3s ease-in-out; /* Suaviza la transición cuando se aumenta */
+    
+}
+
+/* audio musica */
+.musica {
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  
+}
+/*
+.musica h2 {
+  font-size: 28px;
+  color: #1e293b;
+  border-bottom: 5px solid #3b82f6;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+*/
+
+.musica p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #4b5563;
+}
+
+.reproductores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.audio-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  width: 300px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.audio-card:hover {
+  transform: translateY(-5px);
+}
+
+.audio-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.audio-card h3 {
+  font-size: 18px;
+  margin: 0 0 5px;
+  color: #111827;
+}
+
+.artista {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+audio {
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+}
+
+.nota {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+  color: #6b7280;
+}
+
+.spotify-button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.spotify-button {
+  display: inline-block;
+  background-color: #1DB954;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.spotify-button:hover {
+  background-color: #1ed760;
+  transform: scale(1.05);
+}
+
+
+/*fin musica*/
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin: 5px 0;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+/* carusel de fotos */
+
+.galeria {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.titulo-galeria {
+  font-size: 2em;
+  font-weight: bold;
+  color: #1e293b;
+  border-bottom: 3px solid #2563eb;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.descripcion-galeria {
+  font-size: 1.1em;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 650px;
+  height: 400px;
+  margin: 0 auto 40px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #2563eb;
+}
+
+.foto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.foto-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  overflow: hidden;
+  text-align: left;
+}
+
+.foto-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.foto-card h4 {
+  font-size: 1.1rem;
+  margin: 12px 16px 4px;
+  color: #1e293b;
+}
+
+.foto-card p {
+  font-size: 0.95rem;
+  margin: 0 16px 16px;
+  color: #6b7280;
+}
+
+
+/* Sección de comidas favoritas */
+.comidas-favoritas {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.comidas-favoritas h2 {
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #3b82f6;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.comidas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.comida-card {
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.comida-card:hover {
+  transform: translateY(-5px);
+}
+
+.comida-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.comida-card img:hover{
+  border-radius:20%;
+  -webkit-border-radius:20%;
+  box-shadow: 0px 0px 15px 15px #049adaaa;
+  -webkit-box-shadow: 0px 0px 12px 12px #2d94ee53;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+  
+.comida-card h3 {
+  font-size: 1.3rem;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.comida-card p {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.juego-carrera {
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f8fafc;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.juego-carrera h2 {
+  font-size: 2.2rem;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.juego-carrera p {
+  font-size: 1rem;
+  color: #334155;
+}
+
+.pista {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  background-color: #cbd5e1;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 30px 0 20px;
+  box-shadow: inset 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.carro {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: left 0.2s ease;
+}
+
+.cpu {
+  top: 70px;
+}
+
+.meta {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  background-color: #facc15;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-left: 4px solid #1e3a8a;
+}
+
+#mensajeCarrera {
+  font-size: 1.3rem;
+  color: #1e3a8a;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+#reiniciar {
+  padding: 10px 20px;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+#reiniciar:hover {
+  background-color: #1e40af;
+}
